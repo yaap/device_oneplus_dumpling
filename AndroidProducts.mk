@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip.mk
+    $(LOCAL_DIR)/aosip_dumpling.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosip_dumpling-user \
+    aosip_dumpling-userdebug \
+    aosip_dumpling-eng
