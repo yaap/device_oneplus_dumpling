@@ -24,10 +24,6 @@ $(call inherit-product, device/oneplus/dumpling/device.mk)
 # Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-# Maintainer Prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="David Sn"
-
 PRODUCT_NAME := aosip_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
