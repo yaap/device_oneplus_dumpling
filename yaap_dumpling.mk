@@ -22,14 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # GApps targets
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosip_dumpling
+PRODUCT_NAME := yaap_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -43,8 +43,8 @@ TARGET_VENDOR_DEVICE_NAME := OnePlus5T
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus5T-user 9 PKQ1.180716.001 1907311828 release-keys"
 
-PRODUCT_PROPERTY_OVERRIDES += \
- 	ro.build.version.security_patch=2019-08-01
+#PRODUCT_PROPERTY_OVERRIDES += \
+# 	ro.build.version.security_patch=2019-08-01
 
 BUILD_FINGERPRINT := OnePlus/OnePlus5T/OnePlus5T:9/PKQ1.180716.001/1907311828:user/release-keys
 

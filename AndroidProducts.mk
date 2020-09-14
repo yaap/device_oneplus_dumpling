@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_dumpling.mk
+    $(LOCAL_DIR)/yaap_dumpling.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_dumpling-user \
-    aosip_dumpling-userdebug \
-    aosip_dumpling-eng
+    yaap_dumpling-user \
+    yaap_dumpling-userdebug \
+    yaap_dumpling-eng
